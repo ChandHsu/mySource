@@ -1,0 +1,17 @@
+Package: com.zhimeng.olived
+Version: 0.0.1
+Architecture: iphoneos-arm
+Maintainer: SmartSnake
+Installed-Size: 88
+Filename: debs/com.zhimeng.olived_0.0.1_iphoneos-arm.deb
+Size: 13610
+MD5sum: 69e8976036d2d22030113e8d723e0109
+SHA1: 9f6b4ee4436f095e8fbfa76d984493cff23ad716
+SHA256: 8679c404ed85ed354ec3afd07652f68b830b7a84c437228a8d9d7adbad6bcedb
+Section: System
+Description: An awesome tool of some sort!!
+Tag: role::hacker
+Author: SmartSnake
+Icon: file:///Applications/ZMOliveApp.app/AppIcon60x60@3x.png
+Name: ZMOliveDaemon
+

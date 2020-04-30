@@ -1,0 +1,8 @@
+Origin: SmartSnake软件源™
+Label: JiaYi
+Suite: stable
+Version: 0.0.1
+Codename: SmartSnake
+Architectures: iphoneos-arm
+Components: main
+Description: SmartSnake软件源

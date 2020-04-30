@@ -1,0 +1,16 @@
+#!/bin/sh
+
+cd `dirname $0`
+cd Olive
+
+#read -p "请拖入待处理的项目文件夹:" projectPath
+#
+#if  [ ! -n "$projectPath" ] ;then
+#echo "您没有输入任何内容🤪"
+#exit 0
+#fi
+
+#这里把所有deb的信息写入到Packages里面去,自动生成1个Packages
+dpkg-scanpackages debs > Packages
+
+exit 0

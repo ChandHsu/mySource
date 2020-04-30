@@ -1,0 +1,19 @@
+#!/bin/sh
+cd `dirname $0`
+
+git add .
+
+read -p "输入本次提交的内容😁:" commitData
+
+if [ -z $commitData ];then             #判断用户是否输入，如果未输入则打印error
+    echo "您没有输入任何内容,服务中止!😜"
+    exit
+fi
+
+#echo $commitData
+
+git commit -m $commitData
+
+git push origin master
+
+exit 0
