@@ -11,8 +11,10 @@ cd Olive
 #fi
 
 #这里把所有deb的信息写入到Packages里面去,自动生成1个Packages
-dpkg-scanpackages debs > Packages
+dpkg-scanpackages -m debs >Packages
 bzip2 -fks Packages
+
+gpg -abs -o Release.gpg Release
 
 #find ../ -name ".DS_Store" -depth -exec rm {} \;
 #
