@@ -12,5 +12,30 @@ cd Olive
 
 #这里把所有deb的信息写入到Packages里面去,自动生成1个Packages
 dpkg-scanpackages debs > Packages
+bzip2 -fks Packages
+
+#find ../ -name ".DS_Store" -depth -exec rm {} \;
+#
+#for file in `ls ../projects`
+#    do
+#      if [[ -d "../projects/$file" ]]; then
+#        mkdir -p "./debs/$file"
+#        dpkg-deb -bZgzip "../projects/$file" "./debs/$file"
+#            fi
+#    done
+#dpkg-scanpackages -m ./debs > ./Packages
+#bzip2 -fks ./Packages
+
+#创建Release
+#apt-ftparchive release ./ > Release
+
+#Origin: SmartSnake软件源™
+#Label: JiaYi
+#Suite: stable
+#Version: 0.0.1
+#Codename: SmartSnake
+#Architectures: iphoneos-arm
+#Components: main
+#Description: SmartSnake软件源
 
 exit 0
